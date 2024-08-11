@@ -7,15 +7,15 @@ header {
 }
 .inline-block {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
+    padding: 20px;
 }
-.logo {
-    width: 23%;
-    padding: 1%;
+.logo img{
+    width: 22%;
 }
 nav {
-    width: 73%;
-    padding: 1%;
+    width: 125%;
+    padding: 0%;
           
 }
     nav ul {
@@ -23,17 +23,23 @@ nav {
         margin-left: auto;
 }
         nav ul li {
-            display: inline-block;
+            display:flex;
         }
 .heroImg {
-    background-color: gray;
+    color: white;
+    background-color: black;
     height: 800px;
-    padding: 25px;
+    padding: 20px;
+}
+.background-element {
+    background-image: url(images/transparentlogo.png);
+    background-repeat: no-repeat;
 }
 .content {
     width: 500px;
     margin: 0 auto;
     float: right;
+    padding: 10px;
     
 }
 .aboutMe {
@@ -43,26 +49,125 @@ nav {
     margin: 30 auto;
     float: left;
 }
-.casestudies {
-    width: 1000px;
-    margin: 20 auto;
-    padding: 20px
-}
-footer {
+.aboutMe button {
+    background-color: gray;
     color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.aboutMe button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+}
+
+
+.mySkills {
+    padding: 40%;
+    text-align: center;
+}
+.flexContainer {
+    display: flex;   
+    flex-wrap: wrap;
+    gap: 30px;   
+    padding: 20px;
+}
+.skill {
+    width: 29%;
+    box-sizing: border-box;
+    border: 3px solid black;
+    text-align: center;
+    
+}
+.skill img {
+    max-width:40%;
+    align-content: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.skill h3 {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+}
+.skill p {
+    max-width: 95%;
+   line-height: 1.5;
+   padding: 20px;
+}
+.myWork {
+    padding: 40%;
+    text-align: center;
+}
+.flexContainer2 {
+    display: flex;   
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding: 20px  
+}
+.workItem {
+    width: 29%;
+    box-sizing: border-box;
+    border: 3px solid black;
+    text-align: center;
+}
+.workItem img {
+    max-width:60%;
+    align-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.workItem h4 {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+.workItem p {
+    max-width: 100%;
+   line-height: 1.5;
+}
+.workItem button {
     background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.workItem button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+}
+
+footer {
+    display:flex;
+    color: black;
+    background-color: gray;
     padding: 20px;
 }
 
 footer ul {
         display: inline-block;
         vertical-align: bottom;
-        padding: 0%; 
+        padding: 1%; 
         list-style-type: none ; 
   }
 footer ul li {
             display: inline-block;
             padding: 10px;
   }
-
+  .footer inline-block-logo {
+    width: 20%
+  }
+@media only screen and (max-width: 600){
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
 
